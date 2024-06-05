@@ -25,6 +25,7 @@ h3{
 }
 h2{
   font-family: titulo;
+ 
 }
 p{
   font-family: messi;
@@ -40,6 +41,12 @@ p{
   flex-direction: column;
   justify-content: center;
   
+}
+.content{
+  color: black;
+}
+.message{
+  color: black;
 }
 
 /* HEADER */
@@ -60,7 +67,7 @@ p{
 .title {
   text-align: center;
   background-color: #205379;
-  color: #fffffe;
+  color: white;
   margin-left: 20px;
 }
 
@@ -69,7 +76,12 @@ p{
   margin: 20px;
   
 }
-
+a{
+  text-decoration: none;
+}
+img{
+  text-decoration: none;
+}
 /* QUESTION */
 .error {
   color: red;
@@ -98,23 +110,32 @@ input {
   cursor: pointer;
   
 }
-
+span{
+  color: black;
+  size: 50px;
+}
 #answer-1, #answer-2 {
   color: black;
+  size: 50px;
 }
 
 .message {
   text-align: center;
 }
-
+.results h2{
+  color: black;
+}
 .results {
   text-align: center;
   margin-top: 20px;
+  color: black;
 }
+
 
 .result {
   margin: 20px;
-  
+  color: black;
+  size: 50px;
 }
 
 h5{

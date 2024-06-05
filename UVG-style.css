@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+main {
+  padding: 20px;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.galileo-logo {
+  max-width: 150px;
+}
+
+.intro-image {
+  position: relative;
+  max-width: 300px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.intro-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.campus-label {
+  position: absolute;
+  bottom: 60px;
+  left: 10px;
+  background-color: #5faf37;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.campus, .careers {
+  margin-top: 20px;
+  display: inline;
+}
+.campus {
+  margin-right: 20px;
+}
+
+header{
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 2rem;
+}
+
+.nav-menu ul{
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li{
+  margin-right: 1.5rem;
+}
+
+.nav-menu a:hover{
+  color: #4ad295;
+
+}
+.menu{
+  z-index: 5;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #000000;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.menu li:hover .tooltip{
+  display: block;
+  opacity: 1;
+}
+
+.menu li .tooltip .bottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+.nav-menu li:last-child{
+  background-color: #4ad295 ;
+  border: 2px solid;
+  padding: .25rem .75rem;
+  border-radius: .2rem;
+}
+
+.nav-menu li:last-child:hover{
+  background: transparent;
+  border: 2px solid #4ad295 ;
+}
+
+.menu-icon img{
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+}
+
+.menu-icon, #check{
+  display: none;
+}
+
+p{
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.careers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.careers-list > div {
+  flex: 1;
+  min-width: 300px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #e6e6e6;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+a, li{
+  font-family: none;
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+
+}
+
+@media (max-width: 768px) {
+  .intro {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .intro-image {
+      margin-top:20px;
+}
+}
